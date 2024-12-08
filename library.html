@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board Game Library</title>
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="library.html">📚 Library</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+        </ul>
+      </nav>      
+      <h1>Board Game Library</h1>
+    </header>
+
+    <main id="main">
+      <h2>Welcome to the GameDrift Board Game Library</h2>
+      <p>Your ultimate hub for connecting with friends and exploring the world of tabletop adventures...</p>
+      <ul>
+        <li>Collection: Access a wide variety of games tailored to different interests, group sizes, and skill levels.</li> 
+        <li>Smart Recommendations: Powered by intelligent matching, our system helps you discover games that align with your preferences and mood.</li>
+        <li>Reviews: Read ratings and insights from fellow players to find your next favorite game.</li> 
+      </ul>
+      <p>Whether you're hosting a game night, looking to learn something new, or simply seeking a fun way to connect, the GameDrift Board Game Library is here to elevate your gaming experience. Start exploring today!</p>
+
+      <div class="filter-section">
+        <div class="search-bar">
+          <input type="text" aria-label="Search for games" placeholder="Search for games..." />
+        </div>
+        <div class="slider-group">
+          <label for="players">Players:</label>
+          <input type="range" id="players" min="2" max="20" value="15" />
+          <span id="player-count"></span>
+        </div>
+      
+        <script>
+          const playerSlider = document.getElementById("players");
+          const playerCount = document.getElementById("player-count");
+      
+          playerCount.textContent = playerSlider.value;
+      
+          playerSlider.addEventListener("input", function () {
+            playerCount.textContent = playerSlider.value;
+          });
+        </script>
+      
+        <fieldset class="prefer">
+          <legend><strong>Game Preferences:</strong></legend>
+          <div class="preferences-grid">
+              <div>
+                <input type="checkbox" id="card" name="type" value="Card" />
+                <label for="card">Card</label>
+              </div>
+              <div>
+                <input type="checkbox" id="strategy" name="type" value="Strategy" />
+                <label for="strategy">Strategy</label>
+              </div>
+              <div>
+                <input type="checkbox" id="economic" name="type" value="Economic" />
+                <label for="economic">Economic</label>
+              </div>
+              <div>
+                <input type="checkbox" id="social" name="type" value="Social deduction" />
+                <label for="social">Social deduction</label>
+              </div>
+              <div>
+                <input type="checkbox" id="role" name="type" value="Role-playing" />
+                <label for="role">Role-playing</label>
+              </div>
+          </div>
+        </fieldset>
+        <div class="slider-group">
+          <label for="difficulty">Difficulty:</label>
+          <input type="range" id="difficulty" min="1" max="5" value="1" />
+          <span id="difficulty-level">1</span>
+        </div>
+
+        <script>
+          const difficultySlider = document.getElementById("difficulty");
+          const difficultyLevel = document.getElementById("difficulty-level");
+
+          difficultyLevel.textContent = difficultySlider.value;
+
+          difficultySlider.addEventListener("input", function () {
+            difficultyLevel.textContent = difficultySlider.value;
+          });
+        </script>
+
+      </div>
+
+      <div class="game-list">
+        <div class="game-card">
+          <img src="images/exp.png" alt="Exploding Kittens" class="game-image" />
+          <div class="game-info">
+            <h3>Exploding Kittens</h3>
+            <p>Players: 2-5</p>
+            <p>Rate: ⭐⭐⭐⭐⭐</p>
+            <p>Difficulty: 2</p>
+            <div class="tags">
+              <span>Card</span>
+              <span>Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <img src="images/uno.png" alt="UNO" class="game-image" />
+          <div class="game-info">
+            <h3>UNO</h3>
+            <p>Players: 2-10</p>
+            <p>Rate: ⭐⭐⭐⭐⭐</p>
+            <p>Difficulty: 1</p>
+            <div class="tags">
+              <span>Card</span>
+              <span>Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <img src="images/wolf.png" alt="Werewolf" class="game-image" />
+          <div class="game-info">
+            <h3>Werewolf</h3>
+            <p>Players: 8-18</p>
+            <p>Rate: ⭐⭐⭐⭐</p>
+            <p>Difficulty: 3</p>
+            <div class="tags">
+              <span>Social deduction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer><p>&copy; 2024 GameDrift. All rights reserved.</p></footer>
+</body>
+<script src="script.js"></script>
+</html>

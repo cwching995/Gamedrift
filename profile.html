@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="library.html">📚 Library</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+      </ul>
+    </nav>      
+    <h1>Your Profile</h1>
+  </header>
+  <main id="main">
+    <h2>Profile Editing Page</h2>
+    <p>The Profile Editing Page allows you to customize your personal details, preferences, and settings. Whether you want to update your username, change your avatar, or refine your interests, this page provides a seamless way to make adjustments that enhance your experience.</p>
+    <ul>
+      <li><strong>Update Personal Information:</strong> Edit details such as your name, email, and contact preferences.</li>
+      <li><strong>Customize Your Avatar:</strong> Upload a new profile picture or choose one from our library.</li>
+      <li><strong>Adjust Game Preferences:</strong> Set your favorite game genres and player settings to get personalized recommendations.</li>
+      <li><strong>Privacy Settings:</strong> Manage visibility options to control how others see your profile.</li>
+    </ul>
+    <div class="profile-container">
+      <div class="profile-header">
+        <!-- Background Upload -->
+        <label for="background-upload" class="bkgd-container">
+          <img src="images/cat.png" alt="Cat" class="bkgd">
+        </label>
+        <input type="file" id="background-upload" accept="image/*" style="display: none;">
+        
+        <!-- Avatar Upload -->
+        <label for="avatar-upload" class="avatar-container">
+          <img src="images/fufu.jpg" alt="Fufu" class="avatar">
+        </label>
+        <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+      </div>
+      
+        
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location">
+        </div>
+        
+        <div class="form-group">
+          <fieldset class="prefer">
+            <legend><strong>Game Preferences:</strong></legend>
+          <div class="preferences-grid" id="pre">
+            <div>
+              <input type="checkbox" id="card" name="preferences" value="Card">
+              <label for="card">Card</label>
+            </div>
+            <div>
+              <input type="checkbox" id="strategy" name="preferences" value="Strategy">
+              <label for="strategy">Strategy</label>
+            </div>
+            <div>
+              <input type="checkbox" id="party" name="preferences" value="Party">
+              <label for="party">Party</label>
+            </div>
+            <div>
+              <input type="checkbox" id="economic" name="preferences" value="Economic">
+              <label for="economic">Economic</label>
+            </div>
+            <div>
+              <input type="checkbox" id="role-playing" name="preferences" value="Role-playing">
+              <label for="role-playing">Role-playing</label>
+            </div>
+            <div>
+              <input type="checkbox" id="social-deduction" name="preferences" value="Social deduction">
+              <label for="social-deduction">Social deduction</label>
+            </div>
+            <div>
+              <label for="others-checkbox" class="visually-hidden">Others</label>
+              <input type="checkbox" id="others-checkbox" name="preferences" value="Others">
+
+              <!-- 为文本框添加 label -->
+              <label for="others-text" class="visually-hidden">Specify Others</label>
+              <input type="text" id="others-text" name="others" placeholder="Specify Others">
+            </div>
+          </div>
+          </fieldset>
+        </div>
+        
+        <div class="form-group">
+          <label for="likes">Likes:</label>
+          <textarea id="likes" name="likes" placeholder="Share what you like..."></textarea>
+        </div>
+        <button type="button" id="save-button">Save</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    </main>
+    <footer><p>&copy; 2024 GameDrift. All rights reserved.</p></footer>
+  </body>
+
+</html>
