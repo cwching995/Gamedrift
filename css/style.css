@@ -443,7 +443,15 @@ footer {
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 12px;
+}
+
+.home{
+	width: 80%;
+	border-radius: 20px;
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-bottom: 30%;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
