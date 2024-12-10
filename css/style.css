@@ -249,6 +249,15 @@ main {
     gap: 10px; /* 复选框和文本之间的间距 */
   }
 
+  #pre {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    column-gap: 100px;
+    row-gap: 10px;
+    justify-content: start;
+    justify-items: start;
+  }
+
   #others-text {
     width: 170px; /* 设置固定宽度 */
     padding: 8px; /* 增加内边距让输入框更美观 */
@@ -458,5 +467,35 @@ footer p {
   * {
     animation: none !important; /* 禁用所有动画 */
     transition: none !important; /* 禁用所有过渡效果 */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #pre {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 100px;
+    justify-content: start;
+    justify-items: start;
+  }
+
+  #pre div {
+    display: flex;
+    align-items: center; /* 让复选框和文本在垂直方向对齐 */
+    gap: 10px; /* 复选框和文本之间的间距 */
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+  .profile-container {
+    width: 75%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px 0 500px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 }
