@@ -1,0 +1,26 @@
+{
+  "name": "gamedrift",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwching995/Gamedrift.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwching995/Gamedrift/issues"
+  },
+  "homepage": "https://github.com/cwching995/Gamedrift#readme",
+  "dependencies": {
+    "mongodb": "^6.20.0",
+    "express": "^4.18.2"
+  }
+}

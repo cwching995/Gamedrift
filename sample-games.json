@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Exploding Kittens",
+    "players": "2-5",
+    "rating": 5,
+    "difficulty": 2,
+    "tags": ["Card", "Strategy"],
+    "imageUrl": "images/exp.png",
+    "description": "A highly strategic, kitty-powered version of Russian Roulette. Players take turns drawing cards until someone draws an Exploding Kitten, which means they lose and are eliminated from the game."
+  },
+  {
+    "name": "UNO",
+    "players": "2-10",
+    "rating": 5,
+    "difficulty": 1,
+    "tags": ["Card", "Strategy"],
+    "imageUrl": "images/uno.png",
+    "description": "The classic card game where players match cards by color or number. Be the first to get rid of all your cards, but don't forget to yell 'UNO!' when you have one card left!"
+  },
+  {
+    "name": "Werewolf",
+    "players": "8-18",
+    "rating": 4,
+    "difficulty": 3,
+    "tags": ["Social deduction"],
+    "imageUrl": "images/wolf.png",
+    "description": "A social deduction game where players are secretly assigned roles as either villagers or werewolves. Villagers must identify and eliminate the werewolves before they take over the village."
+  }
+]
