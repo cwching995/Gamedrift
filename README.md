@@ -2,7 +2,7 @@
 
 A modern board game library web application with a full-stack architecture featuring a React-like frontend and a robust Node.js/Express backend with MongoDB integration.
 
-## 🎮 Features
+## Features
 
 - **Interactive Game Library**: Browse and explore board games with detailed information
 - **Advanced Filtering**: Search games by name, player count, difficulty, and game type
@@ -10,7 +10,7 @@ A modern board game library web application with a full-stack architecture featu
 - **RESTful API**: Complete CRUD operations for game management
 - **Real-time Updates**: Dynamic content loading from the backend
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **HTML5** - Semantic markup
@@ -23,7 +23,7 @@ A modern board game library web application with a full-stack architecture featu
 - **MongoDB** - NoSQL database
 - **MongoDB Driver** - Database connectivity
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Gamedrift/
@@ -61,7 +61,7 @@ Gamedrift/
 └── README.md
 ```
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -143,7 +143,7 @@ curl -X POST http://localhost:6790/library \
   }'
 ```
 
-## 🎯 Usage
+## Usage
 
 ### Frontend Pages
 - **Home** (`/home.html`) - Landing page with project overview
@@ -156,12 +156,3 @@ curl -X POST http://localhost:6790/library \
 - **Difficulty Filter**: Adjust difficulty level with the slider
 - **Type Filter**: Check boxes to filter by game types (Card, Strategy, etc.)
 
-## 🔧 Development
-
-### Scripts
-- `npm start` - Start the development server with auto-reload
-
-### Database
-- Database: `gamedrift`
-- Collection: `games`
-- Connection: `mongodb://127.0.0.1:27017`
